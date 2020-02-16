@@ -5,13 +5,12 @@ import (
 )
 
 // HeapSort Best: O(n log n), Average: O(n log n), Worst: O(n log n)
-func HeapSort(slice []int) []int {
+func HeapSort(slice []int) {
 	heapify(slice)
 	for i := len(slice) - 1; i > 0; i-- {
 		slice[0], slice[i] = slice[i], slice[0]
 		siftDown(slice, 0, i)
 	}
-	return slice
 }
 
 func heapify(slice []int) {

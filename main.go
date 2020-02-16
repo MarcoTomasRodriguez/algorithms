@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 
-	sorter "github.com/MarcoTomasRodriguez/sort/sorter"
-	sorterUtils "github.com/MarcoTomasRodriguez/sort/sorter/utils"
+	"github.com/MarcoTomasRodriguez/sort/sorter/utils"
+
+	"github.com/MarcoTomasRodriguez/sort/sorter"
 )
 
 func main() {
-	t := sorterUtils.GenerateSlice(1e5)
-	fmt.Println(sorter.BubbleSort(t))
-	fmt.Println(sorter.InsertionSort(t))
-	fmt.Println(sorter.HeapSort(t))
-	fmt.Println(sorter.MergeSort(t))
+	testSlice := utils.GenerateSlice(10)
+	fmt.Printf("Initial: %T %v\n", testSlice, testSlice)
+	sorter.MergeSort(testSlice)
+	fmt.Printf("Final: %T %v\n", testSlice, testSlice)
 }

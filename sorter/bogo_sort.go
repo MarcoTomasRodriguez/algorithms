@@ -8,7 +8,7 @@ import (
 )
 
 // BogoSort is a non-efficient permutation sort algorithm
-// For educational purposes only.
+// For educational purposes only
 func BogoSort(slice []int) {
 	for !utils.IsSorted(slice) {
 		rand.Seed(time.Now().UnixNano())

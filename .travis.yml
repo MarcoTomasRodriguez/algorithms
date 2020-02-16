@@ -1,0 +1,7 @@
+language: go
+
+go:
+  - 1.12.10
+
+script:
+  - go test ./sorter

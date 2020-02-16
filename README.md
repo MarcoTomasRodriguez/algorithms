@@ -6,7 +6,7 @@ Different kinds of algorithms implemented in Go.
 
 ## Included algorithms
 
-### Sorting
+### Sort
 
 * Bubble Sort
 * Heap Sort

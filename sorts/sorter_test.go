@@ -1,9 +1,9 @@
-package sorting
+package sorts
 
 import (
 	"testing"
 
-	"github.com/MarcoTomasRodriguez/algorithms/sorting/utils"
+	"github.com/MarcoTomasRodriguez/algorithms/sorts/utils"
 )
 
 const (

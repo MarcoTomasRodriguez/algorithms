@@ -1,7 +1,7 @@
-package sorting
+package sorts
 
 import (
-	"github.com/MarcoTomasRodriguez/algorithms/sorting/utils"
+	"github.com/MarcoTomasRodriguez/algorithms/sorts/utils"
 )
 
 // BubbleSort Best: O(n), Average: O(n^2), Worst: O(n^2)

@@ -1,10 +1,12 @@
-# Sort
+# Algorithms
 
 [![Build Status](https://travis-ci.org/MarcoTomasRodriguez/sort.svg?branch=master)](https://travis-ci.org/MarcoTomasRodriguez/sort)
 
-Sorting algorithms implemented in Go.
+Different kinds of algorithms implemented in Go.
 
 ## Included algorithms
+
+### Sorting
 
 * Bubble Sort
 * Heap Sort

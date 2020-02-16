@@ -1,7 +1,7 @@
-package sorter
+package sorting
 
 import (
-	"github.com/MarcoTomasRodriguez/sort/sorter/utils"
+	"github.com/MarcoTomasRodriguez/algorithms/sorting/utils"
 )
 
 // InsertionSort Best: O(n), Average: O(n^2), Worst: O(n^2)

@@ -1,9 +1,9 @@
-package sorter
+package sorting
 
 import (
 	"testing"
 
-	"github.com/MarcoTomasRodriguez/sort/sorter/utils"
+	"github.com/MarcoTomasRodriguez/algorithms/sorting/utils"
 )
 
 const (
@@ -12,14 +12,6 @@ const (
 	Medium = 1e4
 	Big    = 1e5
 )
-
-func runTestSortAlgorithm(t *testing.T, algorithm func(slice []int)) {
-	slice := utils.GenerateSlice(Tiny)
-	algorithm(slice)
-	if !utils.IsSorted(slice) {
-		t.Error()
-	}
-}
 
 func benchmarkSortAlgorithm(algorithm func(slice []int), lenght int) func(*testing.B) {
 	return func(b *testing.B) {
@@ -34,6 +26,14 @@ func runBenchmarkSortAlgorithm(b *testing.B, algorithm func(slice []int)) {
 	b.Run("Size=Small", benchmarkSortAlgorithm(algorithm, Small))
 	b.Run("Size=Medium", benchmarkSortAlgorithm(algorithm, Medium))
 	b.Run("Size=Big", benchmarkSortAlgorithm(algorithm, Big))
+}
+
+func runTestSortAlgorithm(t *testing.T, algorithm func(slice []int)) {
+	slice := utils.GenerateSlice(Tiny)
+	algorithm(slice)
+	if !utils.IsSorted(slice) {
+		t.Error()
+	}
 }
 
 func TestBubbleSort(t *testing.T) { runTestSortAlgorithm(t, BubbleSort) }

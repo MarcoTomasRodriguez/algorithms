@@ -19,14 +19,14 @@ func heapify(slice []int) {
 	}
 }
 
-func siftDown(slice []int, lowest int, highest int) {
-	root := lowest
+func siftDown(slice []int, low int, high int) {
+	root := low
 	for {
 		child := root*2 + 1
-		if child >= highest {
+		if child >= high {
 			break
 		}
-		if child+1 < highest && slice[child] < slice[child+1] {
+		if child+1 < high && slice[child] < slice[child+1] {
 			child++
 		}
 		if slice[root] < slice[child] {

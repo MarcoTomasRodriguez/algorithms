@@ -32,7 +32,7 @@ func runTestSortAlgorithm(t *testing.T, algorithm func(slice []int)) {
 	slice := utils.GenerateSlice(Tiny)
 	algorithm(slice)
 	if !utils.IsSorted(slice) {
-		t.Error()
+		t.Error("The slice should be sorted.")
 	}
 }
 
@@ -48,14 +48,14 @@ func TestShellSort(t *testing.T) { runTestSortAlgorithm(t, ShellSort) }
 
 func TestQuickSort(t *testing.T) { runTestSortAlgorithm(t, QuickSort) }
 
-func BenchmarkBubbleSort(benchmark *testing.B) { runBenchmarkSortAlgorithm(benchmark, BubbleSort) }
+func BenchmarkBubbleSort(b *testing.B) { runBenchmarkSortAlgorithm(b, BubbleSort) }
 
-func BenchmarkInsertionSort(benchmark *testing.B) { runBenchmarkSortAlgorithm(benchmark, InsertionSort) }
+func BenchmarkInsertionSort(b *testing.B) { runBenchmarkSortAlgorithm(b, InsertionSort) }
 
-func BenchmarkHeapSort(benchmark *testing.B) { runBenchmarkSortAlgorithm(benchmark, HeapSort) }
+func BenchmarkHeapSort(b *testing.B) { runBenchmarkSortAlgorithm(b, HeapSort) }
 
-func BenchmarkShellSort(benchmark *testing.B) { runBenchmarkSortAlgorithm(benchmark, ShellSort) }
+func BenchmarkShellSort(b *testing.B) { runBenchmarkSortAlgorithm(b, ShellSort) }
 
-func BenchmarkMergeSort(benchmark *testing.B) { runBenchmarkSortAlgorithm(benchmark, MergeSort) }
+func BenchmarkMergeSort(b *testing.B) { runBenchmarkSortAlgorithm(b, MergeSort) }
 
-func BenchmarkQuickSort(benchmark *testing.B) { runBenchmarkSortAlgorithm(benchmark, BubbleSort) }
+func BenchmarkQuickSort(b *testing.B) { runBenchmarkSortAlgorithm(b, BubbleSort) }

@@ -14,3 +14,8 @@ Different kinds of algorithms implemented in Go.
 * Shell Sort
 * Merge Sort
 * Quick Sort
+
+### Search
+
+* Binary Search
+* Linear Search

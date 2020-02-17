@@ -20,7 +20,7 @@ func GenerateSlice(size int) []int {
 	return slice
 }
 
-// IsSorted check if the array is well sorted.
+// IsSorted check if the array is well sorted
 func IsSorted(slice []int) bool {
 	for i := range slice {
 		if i == len(slice)-1 {

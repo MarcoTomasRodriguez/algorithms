@@ -1,6 +1,6 @@
 package sorts
 
-// ShellSort Best: O(n log n), Average: depends, Worst: O(n^2)
+// ShellSort Best: O(n log n), Average: depends, Worst: O(n log 2 2n)
 func ShellSort(slice []int) {
 	for i := len(slice) / 2; i > 0; i = (i + 1) * 5 / 11 {
 		for j := i; j < len(slice); j++ {

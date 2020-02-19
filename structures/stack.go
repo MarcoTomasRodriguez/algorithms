@@ -9,7 +9,7 @@ func (stack *Stack) Push(element interface{}) {
 }
 
 // Pop removes the last element of the stack
-func (stack *Stack) Pop(element interface{}) {
+func (stack *Stack) Pop() {
 	if len(*stack) > 0 {
 		*stack = (*stack)[:len(*stack)-1]
 	}

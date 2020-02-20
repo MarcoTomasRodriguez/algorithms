@@ -6,6 +6,12 @@ Different kinds of algorithms implemented in Go.
 
 ## Included algorithms
 
+### Structures
+
+* Stack
+* Queue
+* List
+
 ### Sort
 
 * Bubble Sort

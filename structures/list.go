@@ -16,8 +16,8 @@ func (list List) Get(index int) interface{} {
 	return nil
 }
 
-// Set sets a value to an index in a list if the index is not out of range
-func (list List) Set(element interface{}, index int) {
+// Put sets a value to an index in a list if the index is not out of range
+func (list List) Put(index int, element interface{}) {
 	if !list.IndexOutOfRange(index) {
 		list[index] = element
 	}

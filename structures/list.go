@@ -23,7 +23,7 @@ func (list List) Set(element interface{}, index int) {
 	}
 }
 
-// Swap ...
+// Swap swaps two items by his index
 func (list List) Swap(from int, to int) {
 	if !list.IndexOutOfRange(from) && !list.IndexOutOfRange(to) {
 		list[from], list[to] = list[to], list[from]

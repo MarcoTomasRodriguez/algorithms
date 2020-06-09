@@ -11,7 +11,7 @@ Different kinds of algorithms implemented in Go.
 * Stack
 * Queue
 
-### Sorting
+### Sorting algorithms
 
 * Bubble Sort
 * Heap Sort
@@ -20,7 +20,7 @@ Different kinds of algorithms implemented in Go.
 * Merge Sort
 * Quick Sort
 
-### Searches
+### Searching algorithms
 
 * Binary Search
 * Linear Search

@@ -4,8 +4,6 @@
 
 Different kinds of algorithms implemented in Go.
 
-## Included algorithms
-
 ### Collections
 
 * Stack

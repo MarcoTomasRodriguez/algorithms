@@ -1,6 +1,7 @@
 package sorts
 
 import (
+	"sort"
 	"testing"
 
 	"github.com/MarcoTomasRodriguez/algorithms/sorts/utils"
@@ -13,11 +14,11 @@ const (
 	Big    = 1e5
 )
 
-func benchmarkSortAlgorithm(algorithm func(slice []int), lenght int) func(*testing.B) {
+func benchmarkSortAlgorithm(algorithm func(slice []int), length int) func(*testing.B) {
 	return func(b *testing.B) {
-		slice := utils.GenerateSlice(lenght)
+		slice := utils.GenerateSlice(length)
 		b.ResetTimer()
-		BubbleSort(slice)
+		algorithm(slice)
 	}
 }
 
@@ -31,7 +32,7 @@ func runBenchmarkSortAlgorithm(b *testing.B, algorithm func(slice []int)) {
 func runTestSortAlgorithm(t *testing.T, algorithm func(slice []int)) {
 	slice := utils.GenerateSlice(Tiny)
 	algorithm(slice)
-	if !utils.IsSorted(slice) {
+	if !sort.IntsAreSorted(slice) {
 		t.Error("The slice should be sorted.")
 	}
 }

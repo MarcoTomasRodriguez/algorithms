@@ -1,4 +1,4 @@
-package searches
+package search
 
 // BinarySearch Best: O(1) Average: O(log n) Worst: O(log n)
 func BinarySearch(slice []int, search int) (int, bool) {

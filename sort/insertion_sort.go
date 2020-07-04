@@ -1,7 +1,7 @@
-package sorts
+package sort
 
 import (
-	"github.com/MarcoTomasRodriguez/algorithms/sorts/utils"
+	"github.com/MarcoTomasRodriguez/algorithms/sort/utils"
 )
 
 // InsertionSort Best: O(n), Average: O(n^2), Worst: O(n^2)

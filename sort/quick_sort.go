@@ -1,7 +1,7 @@
-package sorts
+package sort
 
 import (
-	"github.com/MarcoTomasRodriguez/algorithms/sorts/utils"
+	"github.com/MarcoTomasRodriguez/algorithms/sort/utils"
 )
 
 // QuickSort Best: O(n log n), Average: O(n log n), Worst: O(n^2)

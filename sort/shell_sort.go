@@ -1,4 +1,4 @@
-package sorts
+package sort
 
 // ShellSort Best: O(n log n), Average: depends, Worst: O(n log 2 2n)
 func ShellSort(slice []int) {

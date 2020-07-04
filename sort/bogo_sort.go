@@ -1,10 +1,10 @@
-package sorts
+package sort
 
 import (
 	"math/rand"
 	"time"
 
-	"github.com/MarcoTomasRodriguez/algorithms/sorts/utils"
+	"github.com/MarcoTomasRodriguez/algorithms/sort/utils"
 )
 
 // BogoSort is a non-efficient permutation sort algorithm

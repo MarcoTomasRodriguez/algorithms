@@ -1,4 +1,4 @@
-package searches
+package search
 
 // LinearSearch Best: O(1) Average: O(n) Worst: O(n)
 func LinearSearch(slice []int, search int) (int, bool) {

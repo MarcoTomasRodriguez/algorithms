@@ -1,10 +1,10 @@
-package sorts
+package sort
 
 import (
 	"sort"
 	"testing"
 
-	"github.com/MarcoTomasRodriguez/algorithms/sorts/utils"
+	"github.com/MarcoTomasRodriguez/algorithms/sort/utils"
 )
 
 const (

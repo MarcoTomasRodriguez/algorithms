@@ -1,11 +1,11 @@
-package searches
+package search
 
 import (
 	"math/rand"
 	"testing"
 
-	"github.com/MarcoTomasRodriguez/algorithms/sorts"
-	"github.com/MarcoTomasRodriguez/algorithms/sorts/utils"
+	"github.com/MarcoTomasRodriguez/algorithms/sort"
+	"github.com/MarcoTomasRodriguez/algorithms/sort/utils"
 )
 
 const (
@@ -19,7 +19,7 @@ const (
 func benchmarkSearchAlgorithm(algorithm func(slice []int, search int) (int, bool), lenght int) func(*testing.B) {
 	return func(b *testing.B) {
 		slice := utils.GenerateSlice(lenght)
-		sorts.QuickSort(slice)
+		sort.QuickSort(slice)
 		b.ResetTimer()
 		algorithm(slice, rand.Intn(lenght))
 	}
@@ -37,7 +37,7 @@ func runBenchmarkSortAlgorithm(b *testing.B, algorithm func(slice []int, search 
 func runTestSearchAlgorithm(t *testing.T, algorithm func(slice []int, search int) (int, bool)) {
 	slice := utils.GenerateSlice(Tiny)
 	random := rand.Intn(Tiny)
-	sorts.QuickSort(slice)
+	sort.QuickSort(slice)
 	linearIndex, linearFound := LinearSearch(slice, random)
 	algorithmIndex, algorithmFound := algorithm(slice, random)
 	if linearFound != algorithmFound || linearIndex != algorithmIndex {
